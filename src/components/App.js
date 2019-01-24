@@ -10,9 +10,6 @@ import mixesData from '../data/mixes';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-// const Archive = () => <h1>Archive</h1>;
-// const About = () => <h1>About</h1>;
-
 class App extends Component {
   
   constructor(props) {
@@ -110,7 +107,7 @@ class App extends Component {
               {/* Routed Page */}
               <Route exact path="/" render={()=> <Home {...this.state} {...this.actions}/>} />
               <Route path="/archive" render={()=> <Archive {...this.state} {...this.actions}/>} />
-              <Route path="/About" component={About} />
+              <Route path="/About" component={()=> <About {...this.state} {...this.actions}/>} />
             </div>
           </div>
           {/* Audio Player */}
