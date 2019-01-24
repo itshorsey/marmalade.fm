@@ -12,7 +12,7 @@ const About = ({mixes}) => (
     <div className="ph5 ph4-l">
         <div className="measure center lh-copy f4 ph3">
             <p className="mt0">Tasty Grooves Mate</p>
-            <p>YYYYYYYYEEEAHHHHHH.</p>
+            <p>Live from V2.</p>
         </div>
 
         <div className="flex pt3 ph3 ph4l">
