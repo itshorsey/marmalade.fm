@@ -5,6 +5,7 @@ import Header from './Header'
 import Home from './Home'
 import Archive from './Archive'
 import About from './About'
+import Show from './Show'
 
 import mixesData from '../data/mixes';
 
@@ -108,6 +109,10 @@ class App extends Component {
               <Route exact path="/" render={()=> <Home {...this.state} {...this.actions}/>} />
               <Route path="/archive" render={()=> <Archive {...this.state} {...this.actions}/>} />
               <Route path="/About" component={()=> <About {...this.state} {...this.actions}/>} />
+
+
+              <Route path="/show/:slug" render={routeParams => <Show {...routeParams} {...this.state}/>}/>
+
             </div>
           </div>
           {/* Audio Player */}
